@@ -16,6 +16,17 @@ public class AthleteMarathonRunner{
 	System.out.println("New York");
 	System.out.println("9:00 AM");
 	
-	System.out.println(bibNumber);
+	for (int i = 0; i < 5; i++) {
+		
+	
+	int bibNumber;
+int nextBibNumber=1;
+	  bibNumber=nextBibNumber;
+     for (int j= 0; j < 5; j++) {
+		
+	
+	  nextBibNumber++;
+     }
+	System.out.println(nextBibNumber);}
 	
 }}

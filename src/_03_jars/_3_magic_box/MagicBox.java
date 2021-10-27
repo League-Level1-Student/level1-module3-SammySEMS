@@ -6,6 +6,7 @@ package _03_jars._3_magic_box;
 
 
 import java.awt.Dimension;
+import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -37,6 +38,7 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 	 *     
 	 */
 
+
 	BufferedImage backgroundImage;
 
 
@@ -52,6 +54,9 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 
 	private void createUI() {
 		JFrame frame = new JFrame("The Magic Box contains many secrets...");
+		if(mousePressed(null)) {
+			frame.setVisible(true);
+		}
 		frame.add(this);
 		setPreferredSize(new Dimension(backgroundImage.getWidth(), backgroundImage.getHeight()));
 		frame.pack();
@@ -80,7 +85,7 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 	}
 
 	@Override
-	public void mousePressed(MouseEvent e) {
+	public boolean mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
 		
 	}

@@ -16,7 +16,7 @@ JPanel panel = new JPanel();
 frame.add(panel);
 		// 8. DO THIS LAST: 
 		// Set the Smiley class's color variable to Smiley.YELLOW (NOT a specific smiley object's!)
-Smiley.setColor(Smiley.BLUE);
+Smiley.setColor(Smiley.YELLOW);
 		// Using a specific object for a static variable works, but is not usually recommended.
 		// Run it again; are your Smileys all yellow now? Also try changing them to red or green!
 

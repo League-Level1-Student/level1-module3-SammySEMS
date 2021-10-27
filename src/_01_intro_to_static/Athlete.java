@@ -7,7 +7,7 @@ public class Athlete {
 
 	    String name;
 	    int speed;
-	   public int bibNumber;
+	   public int bibNumber=1;
 	    public Athlete(String name, int speed){
 	        this.name = name;
 	        this.speed = speed;
